@@ -1,0 +1,3 @@
+##2-6 Counting
+- Asymmetric ranges are usually easier to use than symmetric ones because of an important property: A range of the form [m, n) has n - m elements, and a range of the form [m, n] has n - m + 1 elements. So, for example, the number of elements in [0, rows) is obvious (i.e., rows - 0 , or rows ) but the number in [1, rows] is less so.
+- This behavioral difference between asymmetric and symmetric ranges is particularly evident in the case of empty ranges: If we use asymmetric ranges, we can express an empty range as [n, n) , in contrast to [n, n-1] for symmetric ranges. The possibility that the end of a range could ever be less than the beginning can cause no end of trouble in designing programs.
