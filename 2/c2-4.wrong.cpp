@@ -1,3 +1,4 @@
+//false
 #include <iostream>
 #include <string>
 
@@ -22,7 +23,7 @@ int main()
 
     const int rows = pad * 2 + 3;
     const string::size_type cols = greeting.size() + pad * 2 + 2;
-    const string blank(cols -2,'!');//using 'm' instead ' ' to show it clearly.
+    const string blank(cols -2,'!');//using '!' instead ' ' to show it clearly.
 
     cout << endl; 
 
@@ -40,7 +41,7 @@ int main()
             {
                 if(r == 0|| r == rows -1 || c==0 || c==cols -1){cout << "*";}
                 else{
-                    if(r != 1 || r != rows - 2){
+                    if(r != 1 && r != rows - 2 && r != pad + 1){
                         cout << blank;
                         break;
                     }
